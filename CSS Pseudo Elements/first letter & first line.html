@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::first letter and ::first line</title>
+	<style>
+		@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+		body { font-family: 'Open Sans', sans-serif; font-size: 1em; color: #444; }
+		body { width: 900px; margin: 0 auto; }
+		
+		p.letter::first-letter {
+			font-size: 75px;
+			font-weight: bold;
+			line-height: 0;
+		}
+
+		p.line::first-line {
+			color: green;
+			font-weight: bold;
+		} 
+
+	</style>
+</head>
+<body>
+	<h1>::first-letter and ::first-line</h1>
+
+	<p class="letter">Magni ipsam repudiandae aliquam ratione iste doloremque, accusamus placeat similique consectetur veritatis dolore itaque voluptatum aut sit adipisci ad id, veniam ipsum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error vero, et officia, quos, non eaque aliquam architecto repellendus dolores laboriosam reprehenderit at, voluptas vel voluptates! Nobis aut, officia aspernatur laborum.</p>
+	
+	<p class="line">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ipsam repudiandae aliquam ratione iste doloremque, accusamus placeat similique consectetur veritatis dolore itaque voluptatum aut sit adipisci ad id, veniam ipsum. Error vero, et officia, quos, non eaque aliquam architecto repellendus dolores laboriosam reprehenderit at, voluptas vel voluptates! Nobis aut, officia aspernatur laborum.</p>
+</body>
+</html>

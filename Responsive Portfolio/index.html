@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Design Portfolio</title>
+	<link rel="stylesheet" href="styles/site.css">
+	<script src="http://code.jquery.com/jquery-1.11.2.js"></script>
+</head>
+<body>
+	<nav>
+		<div class="container cf">
+		<img class="menu-icon" src="images/menu-icon.png" alt="click to expand menu">
+			<ul class="nav-list">
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">WORK</a></li>
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">CONTACT</a></li>
+			</ul>
+			<ul class="social-list">
+				<li><a href="#"><img src="images/youtube.png" alt="YouTube"></a></li>
+				<li><a href="#"><img src="images/twitter.png" alt="Twitter"></a></li>
+				<li><a href="#"><img src="images/facebook.png" alt="Facebook"></a></li>
+			</ul>
+		</div> <!-- END of "container" -->
+	</nav>
+
+	<header class="container">
+		<h1>My Design Portfolio</h1>
+		<h3>DESIGN SOLUTIONS FOR YOUR BUSINESS</h3>
+	</header>
+
+	<section class="feature">
+		<ul class="feature-list container">
+			<li class="feature-web"><a href="#"><img src="images/web.png" alt="" class="feature-icon"><h3 class="feature-title">WEB DESIGN</h3></a></li>
+			<li class="feature-graphic"><a href="#"><img src="images/graphic.png" alt="" class="feature-icon"><h3 class="feature-title">GRAPHIC DESIGN</h3></a></li>
+			<li class="feature-video"><a href="#"><img src="images/video.png" alt="" class="feature-icon"><h3 class="feature-title">VIDEO PRODUCTION</h3></a></li>
+		</ul>
+	</section> <!-- END of "feature"-->
+
+	<article class="body-text container">
+		<h2>Design Services</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</article>
+
+	<section class="portfolio-sample">
+		<div class="container">
+			<h2>Portfolio</h2>
+
+			<ul class="portfolio-list cf">
+				<li class="port-laptops">
+					<span class="caption cf">
+						<a href="#">Lorem ipsum dolor sit amet </a><img src="images/web-small.png" alt="" class="sample-icon"> 
+					</span>
+				</li>
+
+				<li class="port-acme">
+					<span class="caption cf">
+						<a href="#">Lorem ipsum dolor sit amet </a><img src="images/graphic-small.png" alt="" class="sample-icon">
+					</span>
+				</li>
+
+				<li class="port-demoreel">
+					<span class="caption cf">
+						<a href="#">Lorem ipsum dolor sit amet </a><img src="images/video-small.png" alt="" class="sample-icon">
+					</span>
+				</li>
+
+				<li class="port-logo">
+					<span class="caption cf">
+						<a href="#">Lorem ipsum dolor sit amet </a><img src="images/graphic-small.png" alt="" class="sample-icon"> 
+					</span>
+				</li>
+			</ul>
+		</div>
+	</section> <!-- END of "portfolio-sample"-->
+
+	<footer class="cf">
+		<div class="container cf">
+			<div class="col-one-third">
+				<h3>From the Blog</h3>
+				<dl class="footer-list">
+					<dt>Lorem ipsum dolor sit</dt>
+					<dd>on March 10, 2015</dd>
+					<dt>Lorem ipsum dolor sit</dt>
+					<dd>on March 18, 2015</dd>
+					<dt>Lorem ipsum dolor sit</dt>
+					<dd>on March 29, 2015</dd>
+				</dl>
+			</div> <!-- END of "col-one-third" -->
+			<div class="col-one-third">
+				<h3 class="contact">Contact Us</h3>
+				<address>
+					132 45th St.<br>
+					Mirpur, Dhaka, BD <br>
+					(017)-17-615531<br>
+					<a href="mailto:mtuhin.eee@gmail.com">mtuhin.eee@gmail.com</a>
+				</address>
+			</div> <!-- END of "col-one-third" -->
+			<div class="col-one-third registration">
+				<h3 class="contact">Register for Updates</h3>
+				<form action="#">
+					<input type="text" id="name" placeholder="Name">
+					<input type="text" id="email" placeholder="email@address.com">
+					<button type="submit">SUBSCRIBE</button>
+				</form>
+			</div> <!-- END of "col-one-third" -->
+		</div> <!-- END of "container" -->
+
+		<span class="copyright">&copy;copyright 2014, My portfolio Design</span>
+	</footer>
+	
+	<script>
+		$(function(){
+			$nav = $('.nav-list');
+			$('.menu-icon').click(function(){
+				$nav.slideToggle();
+			});
+
+			$(window).resize(function() {
+				if ( $(window).width() >= 640 ) {
+					$nav.show();
+				} else {
+					$nav.hide();
+				}
+			});
+		});
+	</script>
+</body>
+</html>

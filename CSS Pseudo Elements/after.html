@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::after</title>
+	<style>
+		@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+		body { font-family: 'Open Sans', sans-serif; font-size: 1em; color: #444; }
+		
+		ul.todo li.checked::after {
+			content: "";
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background-image: url(check.png);
+			margin-left: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>The ::before pseudu elements</h1>
+	<h3>To-Do-List</h3>
+	<ul class="todo">
+		<li>Wash the car</li>
+		<li class="checked">Play Far Cry 4</li>
+		<li class="checked">Play Mafia 3</li>
+		<li>Sit Idle</li>
+	</ul>
+</body>
+</html>

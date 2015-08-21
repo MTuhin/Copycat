@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::pseudu elements</title>
+	<style>
+		@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+		body { font-family: 'Open Sans', sans-serif; font-size: .8em; color: #444; width: 500px; margin: 0 auto; }
+		.container { background-color: #e6e6e6; padding: 20px; box-sizing: border-box; }
+		p { line-height: 1.8em; }
+		p::selection { background-color: #ee5e59; color: #fff; }
+		h1::selection {color: #eb5749;}
+		ul { margin-bottom: 0; padding-left: 0; }
+		li { list-style-type: none; position: relative; }
+		li::selection { color: #eb5749; }
+
+		.todo::before {
+			content: "";
+			display: inline-block;
+			width: 8px;
+			height: 8px;
+			background-color: #eb5749;
+			margin-right: 10px;
+		}
+
+		.done::after {
+			content: "";
+			position: absolute;
+			top: 2px;
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			background-image: url("http://png-2.findicons.com/files/icons/1583/silk_companion_1/16/bullet_tick.png");
+		}			
+
+		.list::before {
+			content: "";
+			display: inline-block;
+			width: 8px;
+			height: 8px;
+			border-radius: 100%;
+			background-color: #eb5749;
+			margin-right: 0;
+			margin-right: 10px;
+		}
+
+		h1 {
+			margin-top: 0;
+			background-color: #90ee90;
+			margin: 0 -60px 0 -20px;
+			padding: 0 0 0 20px;
+			position: relative;
+			line-height: 43px;
+		}
+
+		h1::after {
+			content: "";
+			width: 0;
+			height: 0;
+			position: absolute;
+			top: 43px;
+			right: 0;
+			border-bottom: 60px solid transparent;			
+			border-left: 40px solid #90ee90;
+		}
+
+		.added-element {
+			width: 100%;
+			height: 40px;
+			position: relative;
+		}
+
+		.added-element::after {
+			content: "";
+			width: 5px;
+			height: 40px;
+			position: absolute;
+			top: 0;
+			left: 245px;
+			background-color: #d2691e;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Lorem ipsum dolor</h1>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eligendi molestias, officiis debitis facere velit ab ullam unde, voluptate animi quibusdam, recusandae repellat fuga corporis incidunt vitae id numquam consequuntur? Consectetur adipisicing elit! Omnis natus voluptas provident quisquam maiores minima nostrum deserunt, sed voluptatum ratione, reiciendis laborum iusto, eveniet eaque numquam dolore commodi aliquid dolores.</p>
+	</div>
+
+	<div class="added-element"></div>
+
+	<div class="container">
+		<h1>To-DO-List</h1>
+
+		<ul>
+			<li class="todo">Omnis natus voluptas</li>
+			<li class="todo done">Consectetur adipisicing</li>
+			<li class="todo done">facere velit ab dolore</li>
+			<li class="todo">Lorem ipsum dolor</li>
+		</ul>
+	</div>
+
+	<div class="added-element"></div>
+
+	<div class="container">
+		<h1>Voluptate animi quibusdam</h1>
+
+		<ul>
+			<li class="list">Omnis natus voluptas</li>
+			<li class="list">Consectetur adipisicing</li>
+			<li class="list">facere velit ab dolore</li>
+			<li class="list">Lorem ipsum dolor</li>
+		</ul>
+	</div>
+</body>
+</html>

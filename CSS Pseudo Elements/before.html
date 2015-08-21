@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::before</title>
+	<style>
+		@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+		body { font-family: 'Open Sans', sans-serif; color: #444; }
+		
+		h1::before {
+			content: "";
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			border-radius: 100px;
+			background-color: red;
+			margin-right: 10px;
+		}
+
+		ul.prices li::before {
+			content: "$";
+			font-weight: bold;
+			color: green;
+		}
+	</style>
+</head>
+<body>
+	<h1>The ::before pseudu elements</h1>
+	<h3>Our Prices</h3>
+	<ul class="prices">
+		<li>23.98</li>
+		<li>25.25</li>
+		<li>29.39</li>
+		<li>11.22</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::after</title>
+	<style>
+		@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+		body { font-family: 'Open Sans', sans-serif; font-size: 1em; color: #444; }
+		
+		.bubble {
+			color: #fff;
+			background-color: #777;
+			width: 200px;
+			line-height: 60px;
+			padding: 60px;
+			margin: 0 auto;
+			text-align: center;
+			font-size: 1.3em;
+			border-radius: 40px;
+			position: relative;
+		}
+
+		.bubble::before {
+			position: absolute;
+			content: "";
+			width: 60px;
+			height: 60px;
+			border-radius: 100%;
+			background-color: #777;
+			bottom: -30px;
+			left: 50px;
+			z-index: -5;
+		}
+
+		.bubble::after {
+			position: absolute;
+			content: "";
+			width: 60px;
+			height: 60px;
+			border-radius: 100%;
+			background-color: #fff;
+			bottom: -40px;
+			left: 60px;
+			z-index: -4;
+		}
+
+		.stop {
+			width: 20px;
+			height: 20px;
+			border-radius: 100%;
+			background-color: red;
+			 margin: 100px auto;
+			 position: relative; 
+		}
+
+		.stop::after {
+			content: "";
+			position: absolute;
+			width: 10px;
+			height: 10px;
+			background-color: #fff;
+			top: 25%;
+			left: 25%;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="bubble">Speech Bubble</div>
+	<div class="stop"></div>
+</body>
+</html>

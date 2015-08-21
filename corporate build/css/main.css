@@ -1,0 +1,133 @@
+/* ******************** GENERAL ******************** */
+
+@font-face {
+	font-family: colossalis;
+	src: url('Colossalis Bold');
+}
+
+body { border-top: 8px solid #ec8e08; color: #888; font-family: "trebuchet MS"; }
+.container { margin: 0 auto; width: 960px; }
+h1, h2, h3, h4, h5, h6 { color: #ec8e08; font-family: colossalis, Impact, sans-serif; }
+/*.clear { clear: both; } */
+
+/* ******************** CF ******************** */
+
+.cf:before, .cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+/* ******************** LOGO ******************** */
+
+.logo{ float: left; max-width: 50%; }
+.logo h2 { display: inline-block; font-size: 3em; padding-right: 5px; margin-top: 0; }
+
+.logo h3 { 
+	display: inline-block; color: #a1a1a1; font: 1.75em "trebuchet MS"; border-left: 2px solid #a1a1a1; 
+	padding-left: 10px; position: relative; top: -0.2em;
+}
+
+/* ******************** SOCIAL MEDIA ******************** */
+
+.social { float: right; text-align: right; }
+.social ul { list-style-type: none; padding-left: 0; margin-top: 0; }
+.social ul li {  display: inline-block; }
+.social p { margin: 10px 0 2px 0; font-size: 0.85em; }
+
+.social a i {
+	text-decoration: none; color: #a1a1a1; font-size: 2.5em;
+	transition: color .5s;
+	-webkit-transition: color .5s;
+	-moz-transition: color .5s;
+}
+
+.social a:hover i.fa-facebook-square { color: #3b5998; }
+.social a:hover i.fa-twitter-square { color: #4099ff; }
+.social a:hover i.fa-google-plus-square { color: #d34836; }
+.social a:hover i.fa-youtube-square { color: #ff3333; }
+
+/* ******************** NAVIGATION ******************** */
+
+nav { clear: both; border: 2px solid #ccc; width: 958px; height: 45px; }
+.main-nav { float: left; padding: 0; margin: 0; }
+
+.main-nav li {
+	float: left; list-style-type: none; position: relative;
+	width: 100px; height: 45px; border-right: 1px solid #ccc;
+}
+
+.main-nav li a { 
+	position: absolute; color: #a1a1a1; text-decoration: none; font-size: 14px;
+	width: 100px; height: 31px; padding-top: 14px; text-align: center;
+	transition: background-color 0.5s; -webkit-transition: background-color 0.5s; -moz-transition: background-color 0.5s;
+}
+
+.main-nav li a:hover { background-color: #eee; }
+.search { float: right; color: #a1a1a1; margin: 10px 10px 0 0; }
+.search input { border: 1px solid #a1a1a1; background-color: #eee; border-radius: 30px; padding-left: 8px; }
+
+/* ******************** SLIDER CONTENTS ******************** */
+
+.slider {
+	width: 960px; height: 260px; position: relative; margin-top: 20px;
+	background: #eee url('../img/slider-bg.jpg') no-repeat;
+}
+
+.slider-prev, .slider-next { position: absolute; font-size: 30px; color: #444; top: 115px; opacity: 0.5; transition: opacity 0.5s; }
+.slider-prev:hover, .slider-next:hover { opacity: 1; }
+.slider-prev { left: 10px; }
+.slider-next { right: 10px; }
+.slide-image { position: absolute; top: 15px; left: 80px; }
+.slide-content { width: 50%; position: absolute; right: 80px; }
+.slider-title { font: 55px "Trebuchet MS", Thoma, Arial, sans-serif; font-weight: bold; line-height: 35px; margin-bottom: 5px; }
+.slider-title span { color: #a1a1a1; font-weight: regular; font-size: 30px; }
+
+.slider-button {
+	background-color: #8bcf48; font-weight: bold; border-radius: 4px; color: #fff; position: absolute;
+	width: 280px; height: 40px; padding: 10px; text-decoration: none; transition: background-color 0.5s;
+}
+
+.slider-button span { font-size: 14px; }
+.slider-button:hover { background-color: #9cdf59; }
+
+/* ******************** 3-OLUMNS SETUP ******************** */
+
+.column-one-third, .column-two-third { margin-right: 24px; padding: 0;float: left; }
+.column-one-third { width: 304px; }
+.column-one-third:last-child, .column-two-third:last-child { margin-right: 0; }
+.column-two-third { width: 632px; }
+
+/* ******************** 4-OLUMNS SETUP ******************** */
+
+.column-one-forth {
+	border: 1px solid #ddd; border-left: none; padding: 10px; 
+	width: 218.75px; height: 320px; float: left; overflow: hidden;
+}
+.column-one-forth:first-child { border-left: 1px solid #ddd; }
+
+/* ******************** MEET THE TEAM ******************** */
+
+.meet-the-team { padding-top: 5px; margin-bottom: 10px; }
+.image-container { position: relative; height: 160px; }
+.image-caption { position: absolute; background-color: #000; color: #fff; opacity: 0.5; width: 200px; bottom: 0; padding: 3px 10px; }
+
+/* ******************** FOOTER ******************** */
+
+footer { background-color: #555; border-top: 8px solid #ec8e08; width: 100%; margin-top: 20px; }
+.footer-row { width: 960px; margin: 0 auto; }
+footer h3 { color: #fff; font: 1.4em "Trebuchet MS", Toma, Arial, sans-serif; }
+.thumbnails { list-style-type: none; margin: 0; padding: 0; }
+.thumbnails li { float: left; margin-right: 10px; }
+
+.copyright {
+	border-top: 1px solid #888; text-align: center; width: 960px; 
+	margin: 0 auto; font-size: 12px; padding: 10px;
+}
