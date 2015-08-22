@@ -39,7 +39,21 @@
 			height: 8px;
 			border-radius: 100%;
 			background-color: #eb5749;
-			margin-right: 0;
+			margin-right: 10px;
+		}
+
+		.list-triangle::before {
+			content: "";
+			width: 1px; 
+			height: 1px;
+
+			border-top: 5px solid transparent;
+			border-bottom: 5px solid transparent;
+			border-left: 5px solid #eb5749;
+
+			position: absolute;
+			top: 4px;
+			display: block;
 			margin-right: 10px;
 		}
 
@@ -78,6 +92,8 @@
 			left: 245px;
 			background-color: #d2691e;
 		}
+
+
 	</style>
 </head>
 <body>
@@ -110,6 +126,19 @@
 			<li class="list">Consectetur adipisicing</li>
 			<li class="list">facere velit ab dolore</li>
 			<li class="list">Lorem ipsum dolor</li>
+		</ul>
+	</div>
+
+	<div class="added-element"></div>
+
+	<div class="container">
+		<h1>Voluptate animi quibusdam</h1>
+
+		<ul>
+			<li class="list-triangle">Omnis natus voluptas</li>
+			<li class="list-triangle">Consectetur adipisicing</li>
+			<li class="list-triangle">facere velit ab dolore</li>
+			<li class="list-triangle">Lorem ipsum dolor</li>
 		</ul>
 	</div>
 </body>
