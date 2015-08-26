@@ -1,0 +1,198 @@
+@import url(http://fonts.googleapis.com/css?family=Gentium+Basic:400,400italic,700italic,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+body {
+	font-family: 'Gentium Basic', serif;
+	width: 1200px;
+	margin: 0 auto;
+	font-size: 1.1em;
+	color: #626262;
+}
+
+p { font-family: 'Open Sans', sans-serif; }
+
+/* ************************* CLEAR FIX *************************  */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/* ************************* BANNER *************************  */
+
+.banner { padding: 10px 0 30px; width: 100%; text-align: center; }
+
+.logo {
+	background: url('../images/logo.png') no-repeat center top;
+	width: 72px;
+	height: 72px;
+	margin: 40px auto 50px;
+	cursor: pointer;
+}
+
+.header {
+	width: 550px;
+	margin: 0 auto;
+}
+
+.header h2 {
+	letter-spacing: 2px;
+	font-weight: normal;
+}
+
+.highlight { color: #f93f1c; }
+
+.header-description::after {
+	content: "";
+	width: 300px;
+	height: 1px;
+	display: block;
+	background-color: #8c8c8c;
+	margin: 50px auto;
+}
+
+/* ************************* FORM *************************  */
+
+.form {
+	background: url('../images/dark-bg.jpg');
+	text-align: center;
+	padding: 50px 0;
+	margin: 0 auto;
+	font-family: 'Open Sans', sans-serif;
+}
+.contact {
+	margin: auto;
+}
+
+.contact input {
+	display: block;
+	margin: 3px auto 10px;
+	text-align: center;
+	width: 270px;
+	font-size: .7em;
+	line-height: 2.5em;
+}
+
+.form p {
+	font-size: .7em;
+	text-align: center;
+	color: #fff;
+	margin: 20px 0;
+}
+
+.contact button {
+	display: block;
+	width: 270px;
+	height: 32px;
+	background-color: #f93f1c;
+	border: none;
+	margin: 0 auto;
+	color: #fff;
+	font-weight: normal;
+	font-size: .7em;
+}
+
+/* ************************* STATUS *************************  */
+
+.mcin-content { background-color: #f5f4f2; width: 100%;}
+
+.status_report { padding: 20px 0 30px; }
+
+.status_report h2 {
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.progress {
+	background-color: #e7e8d9;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.loading {
+	background: url('../images/loading.png') no-repeat;
+	width: 432px;
+	height: 114px;
+	float: left;
+	margin: 10px;
+}
+
+.load_description {
+	width: 535px;
+	float: right;
+}
+
+.load_description h6 { margin: 22px 0 10px 0; }
+
+.load_description p {
+	margin-top: 10px;
+	font-size: .8em;
+	line-height: 1.7em;
+}
+
+/* ************************* PROMO *************************  */
+
+.promo {
+	background-color: #2f2f2f;
+	text-align: center;
+	color: #ffffff;
+	padding: 40px 0 50px;
+}
+
+.promo h2 {
+	color: #FFF;
+	font-weight: normal;
+}
+
+.promo p {
+	font-size: 0.7em;
+	margin: 25px 0 30px;
+}
+
+.freebie-img {
+	background: url('../images/freebie.png') no-repeat center center;
+	width: 812px;
+	height: 318px;
+	margin: 0 auto;
+}
+
+/* ************************* FOOTER *************************  */
+
+.footer {
+	text-align: center;
+	padding: 45px 0 100px;
+}
+
+.footer h2 {
+	font-weight: normal;
+	margin-bottom: 35px;
+}
+
+.social {
+	position: relative;
+	font-size: 3em;
+	color: #f93f1c;
+}
+
+.fa-long-arrow-up {
+	position: absolute;
+	right: 0;
+	cursor: pointer;
+	color: #c4c3c3;
+}
+
+.fa-facebook-official { cursor: pointer; margin-right: 10px; }
+.fa-twitter-square { cursor: pointer; margin-left: 10px; }
+
+.fa-facebook-official:hover { color: #425f9c; }
+.fa-twitter-square:hover { color: #55acee; }
+.fa-long-arrow-up:hover { color: #001426; }
+
+.copyright {font-size: .7em; margin: 100px auto 0; }
+
+
